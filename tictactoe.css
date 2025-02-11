@@ -1,0 +1,52 @@
+body{
+    background-color: #F2BC1B;
+    font-family: 'Pixelify Sans';
+}
+
+p{
+    font-family: 'Rubik Pixels';
+    font-size: 100px;
+    text-align: center;
+    color: #400B15;
+}
+
+.sonido{
+    margin-top: 100px;
+}
+
+.botonAudio{
+    width: 100px;
+    height: 100px;
+    border: #400B15;
+    color: #400B15;
+    size: 50px;
+
+}
+
+#tictactoe{
+    width: 100px;
+    text-align: center;
+}
+
+.celda{
+    width: 400px;
+    height: 400px;
+    font-size: 100px;
+    display: grid;
+    place-items: center;
+    border: 100px;
+    float: left;
+}
+
+#marcador{
+    position: relative;
+    top: 10px;
+    height: 10px;
+}
+/*Paleta de colores usada*/
+
+.color1 {color: #BF2C38;}
+.color2 {color: #400B15;}
+.color3 {color: #F2BC1B;}
+.color4 {color: #F28E13;}
+.color5 {color: #BF613F;}

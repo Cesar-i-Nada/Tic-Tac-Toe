@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tictactoe.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik Pixels' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
 </head>
 <body>
-    <div></div>
+
+    <header>
+        <p>Tic Tac Toe</p>
+    </header>
+
+    <div class="sonido">
+        <h4>Active el sonido <br>
+            o juegue en silencio</h4>
+        <button id="botonAudio"></button>
+        <audio src="atmosfera"></audio>
+        <audio src="urgencia"></audio>
+    </div>
+
+    <div id="tictactoe">
+
+    <div class="celda"></div>
+    <div class="celda"></div>
+    <div class="celda"></div>
+    <div class="celda"></div>
+    <div class="celda"></div>
+    <div class="celda"></div>
+    <div class="celda"></div>
+    <div class="celda"></div>
+    <div class="celda"></div>
+    </div>
+
+    <div id="marcador"></div>
+
+    <script src="tictactoe.js"></script>
 </body>
 </html>
