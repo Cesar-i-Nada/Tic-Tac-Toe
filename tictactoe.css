@@ -4,45 +4,69 @@ body{
 }
 
 p{
-    font-family: 'Rubik Pixels';
     font-size: 100px;
+    text-align: center;
+    color: #400B15;
+    margin-top: 3px;
+    margin-bottom: 3px;   
+}
+
+h3{
     text-align: center;
     color: #400B15;
 }
 
+.menu{
+    text-align: center;
+    margin-top: 3px;
+    color: #400B15;
+}
+
+button{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #BF2C38;
+    color: #F2BC1B;
+    border-radius: 10px;    
+}
+
 .sonido{
     margin-top: 100px;
+    text-align: center;
 }
 
 .botonAudio{
     width: 100px;
     height: 100px;
-    border: #400B15;
-    color: #400B15;
+    border: purple;
+    color: blue;
     size: 50px;
 
 }
 
-#tictactoe{
-    width: 100px;
-    text-align: center;
-}
-
-.celda{
-    width: 400px;
-    height: 400px;
-    font-size: 100px;
+.container {
     display: grid;
-    place-items: center;
-    border: 100px;
-    float: left;
-}
+    grid-template-columns: auto auto auto;
+    width: 180px;
+    height: 180px;
+    background-color: #BF613F;
+    padding: 10px;
+    place-self: center;
 
-#marcador{
-    position: relative;
-    top: 10px;
-    height: 10px;
-}
+  }
+
+  .container > div {
+    background-color: #F28E13;
+    border: 1px solid #400B15;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+    
+  
 /*Paleta de colores usada*/
 
 .color1 {color: #BF2C38;}
