@@ -1,0 +1,16 @@
+César Alvarado
+FWD Costa Rica
+Proyecto Tic Tac Toe
+
+1-¿Qué hice ayer?
+Continué estructurando el Trello y cumpliendo tareas.
+Avancé el HTML y CSS hasta un 95% de como lo quiero.
+Terminé el concepto del sitio.
+Cargué la música para el sitio.
+
+2-¿Qué voy a hacer hoy?
+Desarrollar JS.
+
+3-¿Tengo algún bloqueo?
+De momento ninguno.
+
