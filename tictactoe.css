@@ -1,6 +1,7 @@
 body{
     background-color: #F2BC1B;
     font-family: 'Pixelify Sans';
+    cursor: pointer;
 }
 
 p{
@@ -28,7 +29,8 @@ button{
     margin-right: auto;
     background-color: #BF2C38;
     color: #F2BC1B;
-    border-radius: 10px;    
+    border-radius: 10px;
+        
 }
 
 .sonido{
@@ -45,7 +47,7 @@ button{
 
 }
 
-.container {
+.tablero {
     display: grid;
     grid-template-columns: auto auto auto;
     width: 180px;
@@ -56,7 +58,7 @@ button{
 
   }
 
-  .container > div {
+  .tablero > div {
     background-color: #F28E13;
     border: 1px solid #400B15;
     padding: 10px;
