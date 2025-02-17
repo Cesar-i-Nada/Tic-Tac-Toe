@@ -13,18 +13,19 @@
         <p>&#128049; Tic Tac Toe &#128049;</p>
     </header>
 
-        <audio src="./sonidos/musica_atmosfera.mp3"></audio>
-        <audio src="./sonidos/alerta_de_gane.wav"></audio>
-        <audio src="./sonidos/Gana_humano.wav"></audio>
-        <audio src="./sonidos/Gana_maquina.wav"></audio>
+        <audio id="musicaAtmosfera" src="./sonidos/musica_atmosfera.mp3" loop></audio>
+        <audio id="alertaDeGane" src="./sonidos/alerta_de_gane.wav"></audio>
+        <audio id="ganaHumano" src="./sonidos/Gana_humano.wav"></audio>
+        <audio id="ganaMaquina" src="./sonidos/Gana_maquina.wav"></audio>
 
     <h1 class="menu">Menú de acciones</h1>
 
 <button type="button">Activar Audio</button><br>
 <button type="button">Limpiar pantalla</button><br>
-<button type="button">SCORE</button>
 
 <h3>Juego contra la <em>Máquina</em> y demuestra ser un <em>Humano</em> capaz de vencerla.</h3>
+
+<div class="flex-container">
 
     <div class="tablero">
         <div class="celda"></div>
@@ -36,9 +37,32 @@
         <div class="celda"></div>
         <div class="celda"></div>
         <div class="celda"></div>
-        </div>
+    </div>
 
-    <div id="marcador"></div>
+    <table class="tablaScore">
+        
+        <th colspan="2">SCORE</th>
+        <tr>
+          <th>Player</th>
+          <th>Pts</th>
+        </tr>
+        <tr>
+          <td>Humano</td>
+          <td id="numH">0</td>
+        </tr>
+        <tr>
+          <td>Máquina</td>
+          <td id="numM">0</td>
+        </tr>
+        <tr>
+            <td>Empates</td>
+            <td id="numE">0</td>
+          </tr>
+      </table>
+      </div>
+</div>
+
+<div id="marcador" style="display: none;">Humano: <span id="humanoScore">0</span> - Máquina: <span id="maquinaScore">0</span></div>
 
     <script src="tictactoe.js"></script>
 </body>

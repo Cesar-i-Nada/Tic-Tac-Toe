@@ -15,11 +15,12 @@ p{
 h3{
     text-align: center;
     color: #400B15;
+    margin-top: 2px;
 }
 
 .menu{
     text-align: center;
-    margin-top: 3px;
+    margin-top: 2px;
     color: #400B15;
 }
 
@@ -30,7 +31,6 @@ button{
     background-color: #BF2C38;
     color: #F2BC1B;
     border-radius: 10px;
-        
 }
 
 .sonido{
@@ -44,19 +44,28 @@ button{
     border: purple;
     color: blue;
     size: 50px;
-
 }
 
 .tablero {
     display: grid;
     grid-template-columns: auto auto auto;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
     background-color: #BF613F;
     padding: 10px;
     place-self: center;
-
   }
+
+.celda{
+    min-width: 45px;
+    min-height: 45px;
+    max-width: 45px;
+    max-height: 45px;
+}
 
   .tablero > div {
     background-color: #F28E13;
@@ -66,8 +75,48 @@ button{
     text-align: center;
   }
 
+.marcador{
+    font-size: 20px;
+    text-align: center;
+    color: #400B15;
+}  
 
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #F2BC1B;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.flex-container > div {
+    background-color: #BF2C38;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+table, th, td {
+    border:5px solid #BF2C38;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #F28E13;
+    width: 180px;
+    height: 28px;
     
+  }
+
+#numH{
+    text-align: center;
+}  
+
+#numM{
+    text-align: center;
+}
   
 /*Paleta de colores usada*/
 

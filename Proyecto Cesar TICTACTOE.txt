@@ -3,11 +3,14 @@ FWD Costa Rica
 Proyecto Tic Tac Toe
 
 1-¿Qué hice ayer?
-Inicié el JS.
+Trabajé aún más el JS para correr el juego con la música
 
 2-¿Qué voy a hacer hoy?
-Continuar el JS.
+Continuar trabajando la música para que corra bien.
+Avanzar con las últimas tares del Trello.
+Preparar el README.
+Entregar el proyecto.
 
 3-¿Tengo algún bloqueo?
-De momento ninguno.
+Correr la música simultáneamente al momento específico del juego.
 

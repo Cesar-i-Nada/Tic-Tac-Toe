@@ -1,11 +1,20 @@
 const cuadriculas = Array.from(document.getElementsByClassName("celda"))
 const limpiarPantalla = document.getElementsByClassName("limpiarPantalla")
 const marcador = document.getElementsByClassName("marcador")
-
+const numH = document.getElementById("numH")
+const numM = document.getElementById("numM")
+const numE = document.getElementById("numE")
+let contH = 0
+let contM = 0
+let cantMovimientos = 0
+let ganador = false
+let empate = true
 function juegoHumano() {
     cuadriculas.forEach((cuadricula)=>{
         cuadricula.addEventListener("click",function(){
+            validarGanador()
             cuadricula.textContent = "X"
+            cantMovimientos++
             setTimeout(() => {
             juegoMaquina()
         }, 500);
@@ -24,6 +33,7 @@ function juegoMaquina() {
       })
     const aleatorio = Math.floor(Math.random() * filtroCuadriculas.length)
     filtroCuadriculas[aleatorio].textContent = "O"
+    cantMovimientos++
     validarGanador()
     }
 juegoHumano()
@@ -32,9 +42,25 @@ function validarGanador() {
     for (const item of posGanadoras) {
         let [pos1,pos2,pos3] = item
         if (cuadriculas[pos1].textContent != "" && cuadriculas[pos1].textContent === cuadriculas[pos2].textContent && cuadriculas[pos1].textContent === cuadriculas[pos3].textContent) {
-            alert("GANADOR")
-        }   
+            if (cuadriculas[pos1].textContent === "X") {
+                numH.textContent = contH
+                contH++
+                ganador = true
+            }
+            else if(cuadriculas[pos1].textContent === "O"){
+                contM++
+                numM.textContent = contM
+                ganador = true
+            }           
+        }
+        if(cantMovimientos === 9 && !ganador && empate) {
+            alert("Empate")
+            empate = false
+            contE++
+            numE.textContent = contE
+            ganador = true
+        }
     }
+
 }
 
-/*si se cumple alguno de los valores del array el juego termina*/
