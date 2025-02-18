@@ -13,19 +13,25 @@
         <p>&#128049; Tic Tac Toe &#128049;</p>
     </header>
 
-        <audio id="musicaAtmosfera" src="./sonidos/musica_atmosfera.mp3" loop></audio>
-        <audio id="alertaDeGane" src="./sonidos/alerta_de_gane.wav"></audio>
-        <audio id="ganaHumano" src="./sonidos/Gana_humano.wav"></audio>
-        <audio id="ganaMaquina" src="./sonidos/Gana_maquina.wav"></audio>
-
-    <h1 class="menu">Menú de acciones</h1>
-
-<button type="button">Activar Audio</button><br>
-<button type="button">Limpiar pantalla</button><br>
+    <audio id="alertaDeGane" src="./sonidos/alerta_de_gane.wav"></audio>
+    <audio id="ganaHumano" src="./sonidos/Gana_humano.wav"></audio>
+    <audio id="ganaMaquina" src="./sonidos/Gana_maquina.wav"></audio>
+    
+    <h1 class="menu">JUGAR CON MÚSICA</h1>
+    
+    <div class="flex-container-audio">
+        <div>
+            <audio id="musicaAtmosfera" src="./sonidos/musica_atmosfera.mp3" loop></audio>
+            <input id="OFF" type="button" value="OFF" />
+    
+            <button class="reproductor">ON</button>
+            <audio src=""></audio>
+        </div>
+    </div>
 
 <h3>Juego contra la <em>Máquina</em> y demuestra ser un <em>Humano</em> capaz de vencerla.</h3>
 
-<div class="flex-container">
+<div class="flex-container-tablero">
 
     <div class="tablero">
         <div class="celda"></div>

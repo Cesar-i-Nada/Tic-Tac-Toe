@@ -1,23 +1,35 @@
+/*Aquí están declaradas todas las constantes*/
 const cuadriculas = Array.from(document.getElementsByClassName("celda"))
 const limpiarPantalla = document.getElementsByClassName("limpiarPantalla")
 const marcador = document.getElementsByClassName("marcador")
 const numH = document.getElementById("numH")
 const numM = document.getElementById("numM")
 const numE = document.getElementById("numE")
+
+/*Aquí están declarados todos los lets*/
 let contH = 0
 let contM = 0
+let contE = 0
 let cantMovimientos = 0
 let ganador = false
 let empate = true
+
+/*Estos son las funciones para validar los siguientes pasos: 
+1-antes de que comience el juego
+2-cuando comienza el juego
+3-cuando termina el juego
+4-cuando juega la máquina*/
 function juegoHumano() {
+    validarGanador()
     cuadriculas.forEach((cuadricula)=>{
         cuadricula.addEventListener("click",function(){
-            validarGanador()
-            cuadricula.textContent = "X"
-            cantMovimientos++
-            setTimeout(() => {
-            juegoMaquina()
-        }, 500);
+            if (cuadricula.textContent =="") {
+                cuadricula.textContent = "X"
+                cantMovimientos++
+                setTimeout(() => {
+                juegoMaquina()
+            }, 500);
+            }
         validarGanador()
     })
     validarGanador()
@@ -58,9 +70,22 @@ function validarGanador() {
             empate = false
             contE++
             numE.textContent = contE
-            ganador = true
+            ganador = false
         }
     }
 
 }
+/*Aquí comencé los intentos de habilitar la música del juego*/
+let boton = document.querySelector(".reproductor")
+            let audioEtiqueta = document.querySelector("audio")
+        
+            boton.addEventListener("click", () => {
+              audioEtiqueta.setAttribute("src", "./sonidos/musica_atmosfera.mp3")
+              audioEtiqueta.play()
+              console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+            })
+
+            document.getElementById('OFF').addEventListener('click', () => {
+                document.querySelectorAll('audio').forEach(el => el.pause());
+              });
 
